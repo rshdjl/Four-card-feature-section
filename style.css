@@ -10,6 +10,7 @@ html {
 
 body {
   min-height: 100vh;
+    margin-top: 5rem;
   /* width: 1440px; */
   width: 100%;
   background-color: hsl(0, 0%, 100%);
