@@ -10,12 +10,14 @@ html {
 
 body {
   min-height: 100vh;
+  /* width: 1440px; */
   width: 100%;
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   color: hsl(212, 6%, 44%);
   font-family: "Poppins", sans-serif;
 }
@@ -38,10 +40,10 @@ body {
 }
 
 .container {
-  width: 100%;
-  height: 40rem;
+  width: 30rem;
+  /* height: 40rem; */
   max-width: 50rem;
-  min-width: 50rem;
+  /* min-width: 50rem; */
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.197);
   display: flex;
   flex-direction: column;
@@ -52,37 +54,36 @@ body {
 }
 
 .icon {
-  width: 11rem;
+  width: ٥rem;
   align-self: flex-end;
   margin-top: auto;
 }
 
 .sup_title {
-  font-size: 4rem;
+  font-size: 2.4rem;
   font-weight: 200;
-  margin-bottom: -2rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.4rem;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
 }
 
 .heading_discreption {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
 }
 
 .container_discreption {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .green {
@@ -104,7 +105,25 @@ h2 {
 @media (min-width: 1000px) {
   .home_page {
     width: 90%;
-    max-width: 120rem; /* يمنع التصميم من التمدد بشكل مفرط في الشاشات العريضة */
+    max-width: 120rem;
+  }
+
+  .sup_title {
+    font-size: 3.4rem;
+    font-weight: 200;
+  }
+
+  h1 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+  }
+
+  .heading_discreption {
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 
   .boxes_container {
@@ -117,7 +136,7 @@ h2 {
 
   .green {
     grid-column: 1;
-    grid-row: 1 / span 2; /* تأخذ من الصف الأول وتمتد لصفين */
+    grid-row: 1 / span 2;
   }
 
   .red {
@@ -125,7 +144,6 @@ h2 {
     grid-row: 1;
   }
 
-  /* البطاقة الصفراء (منتصف - أسفل) */
   .yellow {
     grid-column: 2;
     grid-row: 2;
@@ -133,6 +151,6 @@ h2 {
 
   .blue {
     grid-column: 3;
-    grid-row: 1 / span 2; /* تأخذ من الصف الأول وتمتد لصفين */
+    grid-row: 1 / span 2;
   }
 }
